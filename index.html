@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Tensed To Busan | Verb tenses test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="lose">
+        <div class="zombieBig">
+          <div id="blood"></div>
+        </div>
+      </div>
+      <div class="row" id="win">
+        <div class="zombieBig">
+          <div id="fist"></div>
+        </div>
+      </div>
+      <div class="row" id="finish"></div>
+      <div class="row" id="main">
+        <div id="startButtonContainer">
+          <a href="#" id="startButton" class="btn btn-danger btn-lg">Start</a>
+        </div>
+      </div>
+      <div class="row" id="story">
+        <div class="col-md-12 text-center">
+          You and other passengers become trapped on a speeding train during a
+          zombie outbreak in South Korea. <br />
+          The only way out is through it. <br />
+          Eliminate the 15 grammar Nazi zombies who dares to stand in your way!
+          <br />
+          <br />
+          <a href="#" id="storyButton" class="btn btn-danger btn-lg">RUN!</a>
+        </div>
+      </div>
+      <div class="row" id="screen">
+        <div class="col-md-12 text-center" id="runBox">
+          <a
+            href="#"
+            id="runButton"
+            class="btn btn-danger btn-lg"
+            style="display: none"
+            >RUN!</a
+          >
+        </div>
+        <div class="col-md-12" id="question" style="display: none">
+          <div id="questionBox">
+            <form class="form text-center" id="answerForm">
+              <p id="currentTitle"></p>
+              <div class="col-md-12" id="currentQuestion"></div>
+              <div class="col-md-12">
+                <button class="btn btn-danger btn-lg">Punch!</button>
+              </div>
+            </form>
+          </div>
+          <div id="zombie" class="shake"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
